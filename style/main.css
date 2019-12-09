@@ -1,0 +1,2153 @@
+/*アンチクロロベンゼン*/
+/*Common css*/
+
+body {
+    background: #000;
+    height: 100vh;
+    overflow: hidden;
+    font-family: a-otf-futo-min-a101-pr6n, serif;
+    font-style: normal;
+}
+
+
+/*scene1 css*/
+.scene1 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut .1s step-start 46s forwards;
+}
+
+.scene2 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    animation: scene2-trans .4s ease 27.2s forwards, scene2-trans2 .4s ease 30.9s forwards, fadeOut .1s step-start 46s forwards;
+}
+
+.scene3 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    animation: scene3-trans .4s ease 30.9s forwards, fadeOut .1s step-start 46s forwards;
+}
+
+.scene4 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    animation: fadeOut .1s ease 38.3s forwards;
+}
+
+.scene5 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut .1s step-start 46s forwards;
+}
+
+.scene13 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.para,
+.anti {
+    width: 90%;
+    height: 90%;
+    border: solid 1px white;
+    position: absolute;
+}
+
+.para {
+    background: black;
+    clip-path: polygon(-10% -10%, 110% -10%, 110% -10%, 110% -10%, 110% -10%, 110% -10%, -10% 110%);
+    animation: para-clip 1s linear 10.5s forwards, para-clip-end 2.5s linear 19.5s forwards;
+}
+
+.anti {
+    clip-path: polygon(110% -10%, 110% 110%, -10% 110%, -10% 110%, -10% 110%, -10% 110%, -10% 110%);
+    animation: anti-clip 1s linear 10.5s forwards, fadeOut 2.5s ease 19.5s forwards;
+}
+
+.scene1-slach {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right, transparent 0%, transparent 49.5%, rgba(255, 255, 255, 1) 49.9%, rgba(255, 255, 255, 1) 50.1%, transparent 50.5%, transparent 100%);
+    animation: rotate-360 1s linear 10.5s forwards, scene1_slash-move 2.5s linear 19.5s forwards;
+}
+
+.para div {
+    background-color: #cde3fc;
+    transform: translateY(-150%);
+}
+
+.anti div {
+    background: #fccdcd;
+    bottom: 0;
+    transform: translateY(200%);
+}
+
+.Hexagon {
+    position: absolute;
+    width: 20vh;
+    height: 20vh;
+    opacity: .6;
+    filter: blur(50px);
+    clip-path: polygon(50% 0, 92% 23%, 92% 76%, 49% 100%, 7% 76%, 7% 23%);
+}
+
+.ren {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    height: 90vh;
+    width: auto;
+    opacity: .5;
+    transform-origin: 100vw 50vh;
+    transform: translate(-50%, 110%);
+    animation: ren_move 11s linear 1s forwards;
+}
+
+.rin {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    height: 90vh;
+    width: auto;
+    opacity: .5;
+    transform-origin: 100vw 50vh;
+    transform: translate(-50%, -60%) rotateY(0deg) rotateZ(180deg);
+    animation: rin_move 11s linear 10.35s forwards, fadeOut 2.5s ease 19.5s forwards;
+}
+
+/*上からの六角形*/
+.para div:nth-child(1) {
+    left: 33%;
+    animation: hex_up 15s ease-out 0s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(2) {
+    left: 17%;
+    animation: hex_up 15s ease-out 1s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(3) {
+    left: 66%;
+    animation: hex_up 15s ease-out 2s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(4) {
+    left: 12%;
+    animation: hex_up 15s ease-out 3s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(5) {
+    left: -4%;
+    animation: hex_up 15s ease-out 4s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(6) {
+    left: 5%;
+    animation: hex_up 15s ease-out 5s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(7) {
+    left: 10%;
+    animation: hex_up 15s ease-out 6s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(8) {
+    left: 73%;
+    animation: hex_up 15s ease-out 7s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(9) {
+    left: 69%;
+    animation: hex_up 15s ease-out 8s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(10) {
+    left: 51%;
+    animation: hex_up 15s ease-out 9s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(11) {
+    left: 71%;
+    animation: hex_up 15s ease-out 10s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(12) {
+    left: 38%;
+    animation: hex_up 15s ease-out 11s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(13) {
+    left: 43%;
+    animation: hex_up 15s ease-out 12s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(14) {
+    left: 49%;
+    animation: hex_up 15s ease-out 13s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+.para div:nth-child(15) {
+    left: 0%;
+    animation: hex_up 15s ease-out 14s infinite, color-change1 1s linear 10.5s forwards;
+}
+
+/*下からの六角形*/
+.anti div:nth-child(1) {
+    left: 2%;
+    animation: hex_down 15s ease-out 0s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(2) {
+    left: 50%;
+    animation: hex_down 15s ease-out 1s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(3) {
+    left: 62%;
+    animation: hex_down 15s ease-out 2s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(4) {
+    left: 82%;
+    animation: hex_down 15s ease-out 3s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(5) {
+    left: 23%;
+    animation: hex_down 15s ease-out 4s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(6) {
+    left: 40%;
+    animation: hex_down 15s ease-out 5s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(7) {
+    left: 74%;
+    animation: hex_down 15s ease-out 6s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(8) {
+    left: 25%;
+    animation: hex_down 15s ease-out 7s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(9) {
+    left: 38%;
+    animation: hex_down 15s ease-out 8s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(10) {
+    left: 90%;
+    animation: hex_down 15s ease-out 9s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(11) {
+    left: 96%;
+    animation: hex_down 15s ease-out 10s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(12) {
+    left: 34%;
+    animation: hex_down 15s ease-out 11s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(13) {
+    left: 48%;
+    animation: hex_down 15s ease-out 12s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(14) {
+    left: 14%;
+    animation: hex_down 15s ease-out 13s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.anti div:nth-child(15) {
+    left: 28%;
+    animation: hex_down 15s ease-out 14s infinite, color-change2 1s linear 10.5s forwards;
+}
+
+.scene1-text1 {
+    position: absolute;
+    color: white;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    animation: scene1-text1-out 1s linear 10.5s forwards;
+}
+
+.scene1-text2 {
+    position: absolute;
+    color: white;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    animation: fadeOut 2.5s ease 19.5s forwards;
+}
+
+.scene1-text1 p {
+    display: inline-block;
+    font-size: 4vw;
+    transform: translateY(-80px);
+    opacity: 0;
+}
+
+.scene1-text2 p {
+    display: block;
+    font-size: 4vh;
+    opacity: 0;
+}
+
+.scene1-text1 p:nth-child(1) {
+    animation: scene1-text1-in 1.4s ease 3s forwards;
+}
+
+.scene1-text1 p:nth-child(2) {
+    animation: scene1-text1-in 1.4s ease 5s forwards;
+}
+
+.scene1-text1 p:nth-child(3) {
+    animation: scene1-text1-in 1.4s ease 4s forwards;
+}
+
+.scene1-text1 p:nth-child(4) {
+    animation: scene1-text1-in 1.4s ease 7s forwards;
+}
+
+.scene1-text1 p:nth-child(5) {
+    animation: scene1-text1-in 1.4s ease 6s forwards;
+}
+
+.scene1-text1 p:nth-child(6) {
+    color: red;
+    font-size: 5vw;
+    font-weight: bold;
+    animation: scene1-text1-in 1.4s ease 7.5s forwards;
+}
+
+.scene1-text1 p:nth-child(7) {
+    animation: scene1-text1-in 1.4s ease 6.5s forwards;
+}
+
+.scene1-text1 p:nth-child(8) {
+    animation: scene1-text1-in 1.4s ease 3.5s forwards;
+}
+
+.scene1-text1 p:nth-child(9) {
+    animation: scene1-text1-in 1.4s ease 5.5s forwards;
+}
+
+.scene1-text1 p:nth-child(10) {
+    animation: scene1-text1-in 1.4s ease 4.5s forwards;
+}
+
+.scene1-text2 p:nth-child(1) {
+    animation: scene1-text2-in .3s ease 13s forwards;
+}
+
+.scene1-text2 p:nth-child(2) {
+    animation: scene1-text2-in .3s ease 13.3s forwards;
+}
+
+.scene1-text2 p:nth-child(3) {
+    animation: scene1-text2-in .3s ease 13.6s forwards;
+}
+
+.scene1-text2 p:nth-child(4) {
+    animation: scene1-text2-in .3s ease 13.9s forwards;
+}
+
+.scene1-text2 p:nth-child(5) {
+    animation: scene1-text2-in .3s ease 14.2s forwards;
+}
+
+.scene1-text2 p:nth-child(6) {
+    animation: scene1-text2-in .3s ease 14.5s forwards;
+}
+
+.scene1-text2 p:nth-child(7) {
+    animation: scene1-text2-in .3s ease 14.8s forwards;
+}
+
+.scene1-text2 p:nth-child(8) {
+    animation: scene1-text2-in .3s ease 15.1s forwards;
+}
+
+.scene1-text2 p:nth-child(9) {
+    color: red;
+    font-weight: bold;
+    font-size: 5vh;
+    animation: scene1-text2-in .3s ease 15.4s forwards;
+}
+
+.scene1-text2 p:nth-child(10) {
+    animation: scene1-text2-in .3s ease 15.7s forwards;
+}
+
+.scene1-text2 p:nth-child(11) {
+    animation: scene1-text2-in .3s ease 16s forwards;
+}
+
+.scene1-text2 p:nth-child(12) {
+    animation: scene1-text2-in .3s ease 16.3s forwards;
+}
+
+.scene1-text2 p:nth-child(13) {
+    animation: scene1-text2-in .3s ease 16.6s forwards;
+}
+
+.scene1-text2 p:nth-child(14) {
+    animation: scene1-text2-in .3s ease 16.9s forwards;
+}
+
+.scene1-text2 p:nth-child(15) {
+    animation: scene1-text2-in .3s ease 17.2s forwards;
+}
+
+.scene1-text2 p:nth-child(16) {
+    animation: scene1-text2-in .3s ease 17.5s forwards;
+}
+
+.scene1-text2 p:nth-child(17) {
+    animation: scene1-text2-in .3s ease 17.8s forwards;
+}
+
+/*title css*/
+.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut .1s ease 23.7s forwards;
+}
+
+.title p:nth-child(1) {
+    color: white;
+    opacity: 0;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%) rotate(180deg) scale(4);
+    font-size: 5vw;
+    animation: title-p-in .3s ease 22.5s forwards;
+}
+
+.title p:nth-child(2) {
+    color: white;
+    position: absolute;
+    top: 45vh;
+    left: 50vw;
+    transform: translate(-50%, -50%) rotate(180deg);
+    letter-spacing: 0.5vw;
+}
+
+.title-en span {
+    font-size: 2vw;
+    opacity: 0;
+}
+
+.title-en span:nth-child(1) {
+    animation: fadeIn .1s ease 22.8s forwards;
+}
+
+.title-en span:nth-child(2) {
+    animation: fadeIn .1s ease 22.85s forwards;
+}
+
+.title-en span:nth-child(3) {
+    animation: fadeIn .1s ease 22.9s forwards;
+}
+
+.title-en span:nth-child(4) {
+    animation: fadeIn .1s ease 22.95s forwards;
+}
+
+.title-en span:nth-child(5) {
+    animation: fadeIn .1s ease 23s forwards;
+}
+
+.title-en span:nth-child(6) {
+    animation: fadeIn .1s ease 23.05s forwards;
+}
+
+.title-en span:nth-child(7) {
+    animation: fadeIn .1s ease 23.1s forwards;
+}
+
+.title-en span:nth-child(8) {
+    animation: fadeIn .1s ease 23.15s forwards;
+}
+
+.title-en span:nth-child(9) {
+    animation: fadeIn .1s ease 23.2s forwards;
+}
+
+.title-en span:nth-child(10) {
+    animation: fadeIn .1s ease 23.25s forwards;
+}
+
+.title-en span:nth-child(11) {
+    animation: fadeIn .1s ease 23.3s forwards;
+}
+
+.title-en span:nth-child(12) {
+    animation: fadeIn .1s ease 23.35s forwards;
+}
+
+.title-en span:nth-child(13) {
+    animation: fadeIn .1s ease 23.4s forwards;
+}
+
+.title-en span:nth-child(14) {
+    animation: fadeIn .1s ease 23.45s forwards;
+}
+
+.title-en span:nth-child(15) {
+    animation: fadeIn .1s ease 23.5s forwards;
+}
+
+.title-en span:nth-child(16) {
+    animation: fadeIn .1s ease 23.55s forwards;
+}
+
+.title-en span:nth-child(17) {
+    animation: fadeIn .1s ease 23.6s forwards;
+}
+
+.title-en span:nth-child(18) {
+    animation: fadeIn .1s ease 23.65s forwards;
+}
+
+.title p:nth-child(3) {
+    color: white;
+    opacity: 0;
+    position: absolute;
+    top: 47vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    animation: fadeIn_3 .2s ease 22.8s forwards;
+}
+
+.title p:nth-child(4) {
+    color: white;
+    opacity: 0;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    font-size: 2.5vw;
+    letter-spacing: 1vw;
+    animation: fadeIn_3 .2s ease 22.8s forwards;
+}
+
+.title-slash {
+    position: absolute;
+    opacity: 0;
+    width: .5vw;
+    height: 100vh;
+    background: white;
+    box-shadow: 0 0 50px 10px red;
+    animation: fadeIn .2s ease 22.8s forwards;
+}
+
+.title-slash2 {
+    position: absolute;
+    opacity: 0;
+    top: 60vh;
+    width: 40vw;
+    height: .5vw;
+    background: white;
+    box-shadow: 0 0 50px 10px red;
+    animation: fadeIn .2s ease 22.8s forwards;
+}
+
+.title-change {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn .1s ease 23.7s forwards, fadeOut .1s ease 23.9s forwards;
+}
+
+.title-change p {
+    color: white;
+    font-size: 3vw;
+    letter-spacing: 1vw;
+}
+
+/*scene2 css*/
+
+.scene2-text1 p {
+    position: absolute;
+    right: 10vw;
+    color: white;
+    font-size: 10vw;
+    opacity: 0;
+}
+
+.scene2-text1 p:nth-child(1) {
+    color: red;
+    transform: translateY(0vw);
+    top: 10vh;
+    animation: scene2-text-in .1s linear 24s forwards;
+}
+
+.scene2-text1 p:nth-child(2) {
+    transform: translateY(-10vw);
+    top: calc(10vh + 10vw);
+    animation: scene2-text-in .2s linear 24s forwards;
+}
+
+.scene2-text1 p:nth-child(3) {
+    transform: translateY(-20vw);
+    top: calc(10vh + 20vw);
+    animation: scene2-text-in .3s linear 24s forwards;
+}
+
+.scene2-text1 p:nth-child(4) {
+    transform: translateY(-30vw);
+    top: calc(10vh + 30vw);
+    animation: scene2-text-in .4s linear 24s forwards;
+}
+
+.scene2-text2 p,
+.scene3-text2 p {
+    position: absolute;
+    bottom: calc(10vh - 3vw);
+    color: white;
+    font-size: 10vw;
+    opacity: 0;
+}
+
+.scene2-text2 p:nth-child(1) {
+    color: red;
+    transform: translateX(0vw) rotate(90deg);
+    right: 25vw;
+    animation: scene2-text-in2 .1s linear 24.8s forwards;
+}
+
+.scene2-text2 p:nth-child(2) {
+    transform: translateX(10vw) rotate(90deg);
+    right: 35vw;
+    animation: scene2-text-in2 .2s linear 24.8s forwards;
+}
+
+.scene2-text2 p:nth-child(3) {
+    transform: translateX(20vw) rotate(90deg);
+    right: 45vw;
+    animation: scene2-text-in2 .3s linear 24.8s forwards;
+}
+
+.scene2-text2 p:nth-child(4) {
+    transform: translateX(30vw) rotate(90deg);
+    right: 55vw;
+    animation: scene2-text-in2 .4s linear 24.8s forwards;
+}
+
+.scene2-text3 p,
+.scene3-text3 p {
+    position: absolute;
+    left: 10vw;
+    color: white;
+    font-size: 10vw;
+    opacity: 0;
+}
+
+.scene2-text3 p:nth-child(1) {
+    color: red;
+    transform: translateY(0vw) rotate(180deg);
+    bottom: 10vh;
+    animation: scene2-text-in3 .1s linear 25.6s forwards;
+}
+
+.scene2-text3 p:nth-child(2) {
+    transform: translateY(10vw) rotate(180deg);
+    bottom: calc(10vw + 10vh);
+    animation: scene2-text-in3 .2s linear 25.6s forwards;
+}
+
+.scene2-text3 p:nth-child(3) {
+    transform: translateY(20vw) rotate(180deg);
+    bottom: calc(20vw + 10vh);
+    animation: scene2-text-in3 .3s linear 25.6s forwards;
+}
+
+.scene2-text3 p:nth-child(4) {
+    transform: translateY(30vw) rotate(180deg);
+    bottom: calc(30vw + 10vh);
+    animation: scene2-text-in3 .4s linear 25.6s forwards;
+}
+
+.scene2-text4 p,
+.scene3-text4 p {
+    position: absolute;
+    top: 10vh;
+    color: white;
+    font-size: 10vw;
+    opacity: 0;
+}
+
+.scene2-text4 p:nth-child(1) {
+    transform: translateY(0vw) rotate(270deg);
+    left: 20vw;
+    animation: scene2-text-in4 .1s linear 26.4s forwards;
+}
+
+.scene2-text4 p:nth-child(2) {
+    transform: translateX(-10vw) rotate(270deg);
+    left: 30vw;
+    animation: scene2-text-in4 .2s linear 26.4s forwards;
+}
+
+.scene2-text4 p:nth-child(3) {
+    transform: translateX(-20vw) rotate(270deg);
+    left: 40vw;
+    animation: scene2-text-in4 .3s linear 26.4s forwards;
+}
+
+.scene2-text4 p:nth-child(4) {
+    transform: translateX(-30vw) rotate(270deg);
+    left: 50vw;
+    animation: scene2-text-in4 .4s linear 26.4s forwards;
+}
+
+.scene2-text4 p:nth-child(5) {
+    transform: translateX(-40vw) rotate(270deg);
+    left: 60vw;
+    animation: scene2-text-in4 .5s linear 26.4s forwards;
+}
+
+.circle {
+    position: absolute;
+    opacity: .5;
+    transform: scale(0);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: solid 10px red;
+    box-shadow: 0 0 10px red;
+
+}
+
+.circle-type1 {
+    right: 10vw;
+    top: 10vh;
+    animation: circle-move 1s ease 24s forwards;
+}
+
+.circle-type2 {
+    bottom: calc(10vh - 3vw);
+    right: 25vw;
+    animation: circle-move 1s ease 24.8s forwards;
+}
+
+.circle-type3 {
+    top: 10vh;
+    left: 20vw;
+    border: solid 10px white;
+    animation: circle-move 1s ease 26.4s forwards;
+}
+
+.circle-type4 {
+    bottom: 10vh;
+    left: 10vw;
+    animation: circle-move 1s ease 25.6s forwards;
+}
+
+/*scene3*/
+
+.scene3-text1 p {
+    position: absolute;
+    right: 10vw;
+    color: white;
+    font-size: 10vw;
+    opacity: 0;
+}
+
+.scene3-text1 p:nth-child(1) {
+    transform: translateY(0vw);
+    top: 10vh;
+    animation: scene2-text-in .1s linear 27.7s forwards;
+}
+
+.scene3-text1 p:nth-child(2) {
+    transform: translateY(-10vw);
+    top: calc(10vh + 10vw);
+    animation: scene2-text-in .2s linear 27.7s forwards;
+}
+
+.scene3-text1 p:nth-child(3) {
+    transform: translateY(-20vw);
+    top: calc(10vh + 20vw);
+    animation: scene2-text-in .3s linear 27.7s forwards;
+}
+
+.scene3-text1 p:nth-child(4) {
+    transform: translateY(-30vw);
+    top: calc(10vh + 30vw);
+    animation: scene2-text-in .4s linear 27.7s forwards;
+}
+
+.scene3-text1 p:nth-child(5) {
+    transform: translateY(-40vw);
+    top: calc(10vh + 40vw);
+    animation: scene2-text-in .5s linear 27.7s forwards;
+}
+
+.scene3-text2 p:nth-child(1) {
+    color: red;
+    transform: translateX(0vw) rotate(90deg);
+    right: 25vw;
+    animation: scene2-text-in2 .1s linear 28.5s forwards;
+}
+
+.scene3-text2 p:nth-child(2) {
+    transform: translateX(10vw) rotate(90deg);
+    right: 35vw;
+    animation: scene2-text-in2 .2s linear 28.5s forwards;
+}
+
+.scene3-text2 p:nth-child(3) {
+    transform: translateX(20vw) rotate(90deg);
+    right: 45vw;
+    animation: scene2-text-in2 .3s linear 28.5s forwards;
+}
+
+.scene3-text2 p:nth-child(4) {
+    transform: translateX(30vw) rotate(90deg);
+    right: 55vw;
+    animation: scene2-text-in2 .4s linear 28.5s forwards;
+}
+
+.scene3-text3 p:nth-child(1) {
+    transform: translateY(0vw) rotate(180deg);
+    bottom: 10vh;
+    animation: scene2-text-in3 .1s linear 29.3s forwards;
+}
+
+.scene3-text3 p:nth-child(2) {
+    transform: translateY(10vw) rotate(180deg);
+    bottom: calc(10vw + 10vh);
+    animation: scene2-text-in3 .2s linear 29.3s forwards;
+}
+
+.scene3-text3 p:nth-child(3) {
+    transform: translateY(20vw) rotate(180deg);
+    bottom: calc(20vw + 10vh);
+    animation: scene2-text-in3 .3s linear 29.3s forwards;
+}
+
+.scene3-text3 p:nth-child(4) {
+    transform: translateY(30vw) rotate(180deg);
+    bottom: calc(30vw + 10vh);
+    animation: scene2-text-in3 .4s linear 29.3s forwards;
+}
+
+.scene3-text3 p:nth-child(5) {
+    transform: translateY(40vw) rotate(180deg);
+    bottom: calc(40vw + 10vh);
+    animation: scene2-text-in3 .5s linear 29.3s forwards;
+}
+
+.scene3-text4 p:nth-child(1) {
+    color: red;
+    transform: translateY(0vw) rotate(270deg);
+    left: 20vw;
+    animation: scene2-text-in4 .1s linear 30.1s forwards;
+}
+
+.scene3-text4 p:nth-child(2) {
+    transform: translateX(-10vw) rotate(270deg);
+    left: 30vw;
+    animation: scene2-text-in4 .2s linear 30.1s forwards;
+}
+
+.scene3-text4 p:nth-child(3) {
+    transform: translateX(-20vw) rotate(270deg);
+    left: 40vw;
+    animation: scene2-text-in4 .3s linear 30.1s forwards;
+}
+
+.scene3-text4 p:nth-child(4) {
+    transform: translateX(-30vw) rotate(270deg);
+    left: 50vw;
+    animation: scene2-text-in4 .4s linear 30.1s forwards;
+}
+
+.scene3-text4 p:nth-child(5) {
+    transform: translateX(-40vw) rotate(270deg);
+    left: 60vw;
+    animation: scene2-text-in4 .5s linear 30.1s forwards;
+}
+
+.circle-type5 {
+    right: 10vw;
+    top: 10vh;
+    border: solid 10px white;
+    animation: circle-move 1s ease 27.7s forwards;
+}
+
+.circle-type6 {
+    bottom: calc(10vh - 3vw);
+    right: 25vw;
+    animation: circle-move 1s ease 28.5s forwards;
+}
+
+.circle-type7 {
+    top: 10vh;
+    left: 20vw;
+    animation: circle-move 1s ease 30.1s forwards;
+}
+
+.circle-type8 {
+    bottom: 10vh;
+    left: 10vw;
+    border: solid 10px white;
+    animation: circle-move 1s ease 29.3s forwards;
+}
+
+/*scene4*/
+
+.scene4-text1 p {
+    position: absolute;
+    top: calc(10vw + 10vh);
+    color: white;
+    font-size: 10vw;
+    opacity: 0;
+}
+
+.scene4-text1 p:nth-child(1) {
+    color: red;
+    left: 10vw;
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 31.3s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text1 p:nth-child(2) {
+    left: 20vw;
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 31.4s forwards, scene4-text1-in2 .1s ease 32.1s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text1 p:nth-child(3) {
+    left: 30vw;
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 31.5s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text1 p:nth-child(4) {
+    left: 40vw;
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 31.6s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text2 p {
+    position: absolute;
+    left: 20vw;
+    color: white;
+    font-size: 10vw;
+    opacity: 0;
+}
+
+.scene4-text2 p:nth-child(1) {
+    color: red;
+    top: 10vh;
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 32s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text2 p:nth-child(2) {
+    top: calc(10vh + 20vw);
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 32.2s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text2 p:nth-child(3) {
+    top: calc(10vh + 30vw);
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 32.3s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text3 p {
+    position: absolute;
+    right: 20vw;
+    color: white;
+    font-size: 10vw;
+    opacity: 0;
+}
+
+.scene4-text3 p:nth-child(1) {
+    color: red;
+    bottom: calc(10vh + 30vw);
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 33.1s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text3 p:nth-child(2) {
+    bottom: calc(10vh + 20vw);
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 33.2s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text3 p:nth-child(3) {
+    bottom: calc(10vh + 10vw);
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 33.3s forwards, scene4-text1-in2 .1s ease 34.1s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text3 p:nth-child(4) {
+    bottom: 10vh;
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 33.4s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text4 p {
+    position: absolute;
+    bottom: calc(10vh + 10vw);
+    color: white;
+    font-size: 10vw;
+    opacity: 0;
+}
+
+.scene4-text4 p:nth-child(1) {
+    color: red;
+    right: 50vw;
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 33.8s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text4 p:nth-child(2) {
+    right: 40vw;
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 33.9s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text4 p:nth-child(3) {
+    right: 30vw;
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 34s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.scene4-text4 p:nth-child(4) {
+    right: 10vw;
+    transform: scale(0) rotate(360deg);
+    animation: scene4-text-in .1s ease 34.2s forwards, font-size-3vw .4s ease 34.4s forwards;
+}
+
+.circle-type9 {
+    left: 10vw;
+    top: calc(10vw + 10vh);
+    animation: circle-move 1s ease 31.3s forwards;
+}
+
+.circle-type10 {
+    left: 20vw;
+    top: 10vh;
+    animation: circle-move 1s ease 32s forwards;
+}
+
+.circle-type11 {
+    bottom: calc(10vh + 30vw);
+    right: 20vw;
+    animation: circle-move 1s ease 33.1s forwards;
+}
+
+.circle-type12 {
+    bottom: calc(10vh + 10vw);
+    right: 50vw;
+    animation: circle-move 1s ease 33.8s forwards;
+}
+
+/*scene5*/
+
+.scene5-text1 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn .3s ease 35s forwards;
+}
+
+.scene5-text2 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn .3s ease 36s forwards;
+}
+
+.scene5-text3 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn .3s ease 37s forwards;
+}
+
+.scene5-text4 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(10);
+    animation: scene5-text4-in .3s ease 37.5s forwards;
+}
+
+.scene5-text1 p {
+    font-size: 10vw;
+    transform: translateY(-10vw);
+    color: red;
+    animation: scene5-out 1.5s ease 38.6s forwards;
+}
+
+.scene5-text2 p {
+    font-size: 10vw;
+    color: white;
+    animation: scene5-out 1.5s ease 38.6s forwards;
+}
+
+.scene5-text3 p {
+    font-size: 10vw;
+    transform: translateY(10vw);
+    color: white;
+    animation: scene5-out 1.5s ease 38.6s forwards;
+}
+
+.scene5-text4 p {
+    font-size: 10vw;
+    color: red;
+    animation: scene5-out 1.5s ease 38.6s forwards;
+}
+
+.scene5-slash {
+    width: 50vw;
+    height: 1px;
+    background-color: red;
+    transform: translateY(-10vw) translateX(-100vw);
+    animation: scene5-slash-in 1.1s ease-out 37.5s forwards, scene5-out 1.5s ease 38.6s forwards;
+}
+
+.scene5-slash2 {
+    width: 50vw;
+    height: 1px;
+    background-color: red;
+    transform: translateY(10vw) translateX(100vw);
+    animation: scene5-slash-in2 1.1s ease-out 37.5s forwards, scene5-out 1.5s ease 38.6s forwards;
+}
+
+/*scene6*/
+
+.scene6 > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 1vw;
+    background-color: red;
+    opacity: .3;
+}
+
+.scene6-slash1 {
+    transform: translateX(-100vw) translateY(-10vw);
+    animation: scene6-slash1-in .2s ease 40.1s forwards, scene6-slash-move .4s linear 40.3s forwards;
+}
+
+.scene6-slash2 {
+    transform: translateX(100vw) translateY(5vw);
+    animation: scene6-slash2-in .2s ease 40.1s forwards, scene6-slash-move .4s linear 40.3s forwards;
+}
+
+.scene6-slash3 {
+    transform: translateX(-100vw)translateY(20vw);
+    animation: scene6-slash3-in .2s ease 39.9s forwards, scene6-slash-move .4s linear 40.3s forwards;
+}
+
+.scene6-slash4 {
+    transform: translateX(100vw)translateY(35vw);
+    animation: scene6-slash4-in .2s ease 39.7s forwards, scene6-slash-move .4s linear 40.3s forwards;
+}
+
+.scene6-slash5 {
+    transform: translateX(-100vw)translateY(50vw);
+    animation: scene6-slash5-in .2s ease 39.5s forwards, scene6-slash-move .4s linear 40.3s forwards;
+}
+
+.scene6-slash6 {
+    transform: translateX(100vw)translateY(65vw);
+    animation: scene6-slash6-in .2s ease 39.3s forwards, scene6-slash-move .4s linear 40.3s forwards;
+}
+
+.scene6-slash7 {
+    transform: translateX(-100vw)translateY(80vw);
+    animation: scene6-slash7-in .2s ease 39.1s forwards, scene6-slash-move .4s linear 40.3s forwards;
+}
+
+.scene6-slash8 {
+    transform: translateX(100vw)translateY(95vw);
+    animation: scene6-slash8-in .2s ease 38.9s forwards, scene6-slash-move .4s linear 40.3s forwards;
+}
+
+.scene6-text p {
+    position: absolute;
+    color: white;
+    font-size: 2vw;
+    top: 50vh;
+    left: 50vw;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: fadeIn .1s ease 40.4s forwards, fadeOut .1s ease 40.6s forwards;
+}
+
+/*scene7*/
+.scene7 > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1vw;
+    height: 100vh;
+    background-color: red;
+    opacity: .3;
+}
+
+.scene7-slash1 {
+    transform: translateX(-5vw) translateY(100vh);
+    animation: scene7-slash1-in .2s ease 41.9s forwards, scene7-slash-move .4s linear 42.1s forwards;
+}
+
+.scene7-slash2 {
+    transform: translateX(10vw) translateY(-100vh);
+    animation: scene7-slash2-in .2s ease 41.7s forwards, scene7-slash-move .4s linear 42.1s forwards;
+}
+
+.scene7-slash3 {
+    transform: translateX(25vw)translateY(100vh);
+    animation: scene7-slash3-in .2s ease 41.5s forwards, scene7-slash-move .4s linear 42.1s forwards;
+}
+
+.scene7-slash4 {
+    transform: translateX(40vw)translateY(-100vh);
+    animation: scene7-slash4-in .2s ease 41.3s forwards, scene7-slash-move .4s linear 42.1s forwards;
+}
+
+.scene7-slash5 {
+    transform: translateX(55vw)translateY(-100vh);
+    animation: scene7-slash5-in .2s ease 41.1s forwards, scene7-slash-move .4s linear 42.1s forwards;
+}
+
+.scene7-slash6 {
+    transform: translateX(70vw)translateY(100vh);
+    animation: scene7-slash6-in .2s ease 40.9s forwards, scene7-slash-move .4s linear 42.1s forwards;
+}
+
+.scene7-slash7 {
+    transform: translateX(85vw)translateY(-100vh);
+    animation: scene7-slash7-in .2s ease 40.7s forwards, scene7-slash-move .4s linear 42.1s forwards;
+}
+
+.scene7-text p {
+    position: absolute;
+    color: white;
+    font-size: 2vw;
+    top: 50vh;
+    left: 50vw;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: fadeIn .1s ease 42.2s forwards, fadeOut .1s ease 42.4s forwards;
+}
+
+/*.scene8*/
+.scene8 > div,
+.scene9 > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1vw;
+    height: 100vh;
+    background-color: red;
+    opacity: .3;
+}
+
+.scene8-slash1 {
+    transform: translateX(-50vw) skewX(45deg) translateY(100vh);
+    animation: scene8-slash1-in .2s ease 43.7s forwards, scene8-slash-move .4s linear 43.9s forwards;
+}
+
+.scene8-slash2 {
+    transform: translateX(-20vw) skewX(45deg)translateY(-100vh);
+    animation: scene8-slash2-in .2s ease 43.5s forwards, scene8-slash-move .4s linear 43.9s forwards;
+}
+
+.scene8-slash3 {
+    transform: translateX(10vw)skewX(45deg)translateY(100vh);
+    animation: scene8-slash3-in .2s ease 43.3s forwards, scene8-slash-move .4s linear 43.9s forwards;
+}
+
+.scene8-slash4 {
+    transform: translateX(40vw)skewX(45deg)translateY(-100vh);
+    animation: scene8-slash4-in .2s ease 43.1s forwards, scene8-slash-move .4s linear 43.9s forwards;
+}
+
+.scene8-slash5 {
+    transform: translateX(70vw)skewX(45deg)translateY(-100vh);
+    animation: scene8-slash5-in .2s ease 42.9s forwards, scene8-slash-move .4s linear 43.9s forwards;
+}
+
+.scene8-slash6 {
+    transform: translateX(100vw)skewX(45deg)translateY(100vh);
+    animation: scene8-slash6-in .2s ease 42.7s forwards, scene8-slash-move .4s linear 43.9s forwards;
+}
+
+.scene8-slash7 {
+    transform: translateX(130vw)skewX(45deg)translateY(-100vh);
+    animation: scene8-slash7-in .2s ease 42.5s forwards, scene8-slash-move .4s linear 43.9s forwards;
+}
+
+.scene8-text p {
+    position: absolute;
+    color: white;
+    font-size: 2vw;
+    top: 50vh;
+    left: 50vw;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: fadeIn .1s ease 44s forwards, fadeOut .1s ease 44.2s forwards;
+}
+
+/*scene9*/
+.scene9-slash1 {
+    transform: translateX(-50vw) skewX(-45deg) translateY(100vh);
+    animation: scene9-slash1-in .2s ease 45.5s forwards, scene9-slash-move .4s linear 45.7s forwards;
+}
+
+.scene9-slash2 {
+    transform: translateX(-20vw) skewX(-45deg)translateY(-100vh);
+    animation: scene9-slash2-in .2s ease 45.3s forwards, scene9-slash-move .4s linear 45.7s forwards;
+}
+
+.scene9-slash3 {
+    transform: translateX(10vw)skewX(-45deg)translateY(100vh);
+    animation: scene9-slash3-in .2s ease 45.1s forwards, scene9-slash-move .4s linear 45.7s forwards;
+}
+
+.scene9-slash4 {
+    transform: translateX(40vw)skewX(-45deg)translateY(-100vh);
+    animation: scene9-slash4-in .2s ease 44.9s forwards, scene9-slash-move .4s linear 45.7s forwards;
+}
+
+.scene9-slash5 {
+    transform: translateX(70vw)skewX(-45deg)translateY(-100vh);
+    animation: scene9-slash5-in .2s ease 44.7s forwards, scene9-slash-move .4s linear 45.7s forwards;
+}
+
+.scene9-slash6 {
+    transform: translateX(100vw)skewX(-45deg)translateY(100vh);
+    animation: scene9-slash6-in .2s ease 44.5s forwards, scene9-slash-move .4s linear 45.7s forwards;
+}
+
+.scene9-slash7 {
+    transform: translateX(130vw)skewX(-45deg)translateY(-100vh);
+    animation: scene9-slash7-in .2s ease 44.3s forwards, scene9-slash-move .4s linear 45.7s forwards;
+}
+
+.scene9-text p {
+    position: absolute;
+    color: white;
+    font-size: 5vw;
+    top: 50vh;
+    left: 50vw;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: fadeIn .1s ease 45.8s forwards, fadeOut .1s ease 46s forwards;
+}
+
+/*scene10*/
+.rin_white img {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-100%);
+    height: 100vh;
+    width: auto;
+    z-index: -1;
+    animation: rin_white_in 1.8s ease-out 46.1s forwards, rin_white_opa 1.8s step-start 46.1s forwards;
+}
+
+.ren_aqua img {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-100%);
+    height: 100vh;
+    width: auto;
+    z-index: -1;
+    animation: rin_white_in 1.8s ease-out 46.1s forwards, ren_aqua_opa 1.8s step-start 46.1s forwards;
+}
+
+/*scene11*/
+
+.hex_scene11_white {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 100vw;
+    height: 100vw;
+    transform: translate(-50%, -50%) scale(0);
+    background: white;
+    clip-path: polygon(50% 0, 92% 23%, 92% 76%, 49% 100%, 7% 76%, 7% 23%);
+    animation: hex_scene11 1.8s ease 47.9s forwards;
+}
+
+.hex_scene11_black {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 99vw;
+    height: 99vw;
+    transform: translate(-50%, -50%) scale(0);
+    background: black;
+    clip-path: polygon(50% 0, 92% 23%, 92% 76%, 49% 100%, 7% 76%, 7% 23%);
+    animation: hex_scene11 1.8s ease 47.9s forwards;
+}
+
+/*scene12*/
+.scene12-text1 {
+    opacity: 0;
+    color: white;
+    font-size: 7vh;
+    box-shadow: 0 0 50px 10px red;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(0%, -50%);
+    padding: 2vh;
+    animation: scene12-text-move .5s ease 48.8s forwards;
+}
+
+.scene12-text1 p {
+    filter: blur(30px);
+    opacity: 0;
+}
+
+.scene12-text1 p:nth-child(1) {
+    animation: scene12-text1-in .5s ease 49.3s forwards;
+}
+
+.scene12-text1 p:nth-child(2) {
+    animation: scene12-text1-in .5s ease 49.5s forwards;
+}
+
+.scene12-text1 p:nth-child(3) {
+    animation: scene12-text1-in .5s ease 49.7s forwards;
+}
+
+.scene12-text1 p:nth-child(4) {
+    animation: scene12-text1-in .5s ease 49.9s forwards;
+}
+
+.scene12-text1 p:nth-child(5) {
+    animation: scene12-text1-in .5s ease 50.1s forwards;
+}
+
+.scene12-text1 p:nth-child(6) {
+    animation: scene12-text1-in .5s ease 50.3s forwards;
+}
+
+.scene12-text1 p:nth-child(7) {
+    animation: scene12-text1-in .5s ease 50.5s forwards;
+}
+
+.scene12-text1 p:nth-child(8) {
+    animation: scene12-text1-in .5s ease 50.7s forwards;
+}
+
+.scene12-text1 p:nth-child(9) {
+    animation: scene12-text1-in .5s ease 50.9s forwards;
+}
+
+/*scene13*/
+.scene13 p {
+    position: absolute;
+    color: white;
+    font-size: 15vw;
+    top: -15vw;
+    opacity: 0;
+}
+
+.scene13 p:nth-child(1) {
+    left: 20vw;
+    animation: scene13-p1 1.5s ease-in-out 51.4s forwards;
+}
+
+.scene13 p:nth-child(2) {
+    left: 40vw;
+    animation: scene13-p2 1.5s ease-in-out 51.4s forwards;
+}
+
+.scene13 p:nth-child(3) {
+    left: 60vw;
+    animation: scene13-p3 1.5s ease-in-out 51.4s forwards;
+}
+
+
+.scene12 {
+    animation: fadeOut .1s 54s forwards;
+}
+
+@keyframes scene13-p1 {
+    35% {
+        transform: translateY(60vh)rotate(-20deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(calc(110vh + 15vw)) rotate(-45deg);
+        opacity: 0;
+    }
+}
+
+@keyframes scene13-p2 {
+    35% {
+        transform: translateY(50vh)rotate(25deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(calc(110vh + 15vw)) rotate(40deg);
+        opacity: 0;
+    }
+}
+
+@keyframes scene13-p3 {
+    35% {
+        transform: translateY(65vh)rotate(-10deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(calc(110vh + 15vw)) rotate(-30deg);
+        opacity: 0;
+    }
+}
+
+@keyframes scene1-text1-out {
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+@keyframes scene1-text1-in {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scene1-text2-in {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes title-p-in {
+    100% {
+        transform: scale(1) translate(-50%, -50%) rotate(180deg);
+        opacity: 1;
+    }
+}
+
+@keyframes hex_up {
+    100% {
+        transform: translateY(500%) rotate(240deg);
+        opacity: 0;
+    }
+}
+
+@keyframes hex_down {
+    100% {
+        transform: translateY(-500%) rotate(-240deg);
+        opacity: 0;
+    }
+}
+
+@keyframes rotate-360 {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes para-clip {
+    25% {
+        clip-path: polygon(-10% -10%, 110% -10%, 110% 110%, 110% 110%, 110% 110%, 110% 110%, -10% -10%);
+    }
+
+    50% {
+        clip-path: polygon(110% -10%, 110% -10%, 110% 110%, -10% 110%, -10% 110%, -10% 110%, 100% -10%);
+    }
+
+    75% {
+        clip-path: polygon(110% 110%, 110% 110%, 110% 110%, -10% 110%, -10% -10%, -10% -10%, 110% 110%);
+    }
+
+    100% {
+        clip-path: polygon(-10% 110%, -10% 110%, -10% 110%, -10% 110%, -10% -10%, 110% -10%, -10% 110%);
+    }
+}
+
+@keyframes para-clip-end {
+    1% {
+        clip-path: polygon(-10% -10%, 110% -10%, 110% -10%, 110% -10%, 110% -10%, -10% 110%, -10% 110%)
+    }
+
+    100% {
+        clip-path: polygon(-10% -10%, 110% -10%, 110% -10%, 110% -10%, 110% 110%, 110% 110%, -10% 110%)
+    }
+}
+
+@keyframes anti-clip {
+    25% {
+        clip-path: polygon(110% 110%, 110% 110%, -10% 110%, -10% -10%, -10% -10%, -10% -10%, -10% -10%);
+    }
+
+    50% {
+        clip-path: polygon(-10% 110%, -10% 110%, -10% 110%, -10% -10%, 110% -10%, 110% -10%, 110% -10%);
+    }
+
+    75% {
+        clip-path: polygon(-10% -10%, -10% -10%, -10% -10%, -10% -10%, 110% -10%, 110% 110%, 110% 110%);
+    }
+
+    100% {
+        clip-path: polygon(110% -10%, 110% -10%, 110% -10%, 110% -10%, 110% -10%, 110% 110%, -10% 110%);
+    }
+}
+
+@keyframes color-change1 {
+    100% {
+        background-color: #fccdcd;
+    }
+}
+
+@keyframes color-change2 {
+    100% {
+        background-color: #cde3fc;
+    }
+}
+
+@keyframes scene1_slash-move {
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+        filter: blur(20px);
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes centering {
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fadeIn_3 {
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes ren_move {
+    85% {
+        transform: translate(-50%, 45%);
+    }
+
+    100% {
+        transform: translate(-50%, 45%) rotateY(180deg);
+    }
+}
+
+@keyframes rin_move {
+    15% {
+        transform: translate(-50%, -60%) rotateY(180deg) rotateZ(180deg);
+    }
+
+    100% {
+        transform: translate(-50%, -13%) rotateY(180deg) rotateZ(180deg);
+    }
+}
+
+@keyframes scene2-text-in {
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes scene2-text-in2 {
+    100% {
+        transform: translate(0, 0) rotate(90deg);
+        opacity: 1;
+    }
+}
+
+@keyframes scene2-text-in3 {
+    100% {
+        transform: translate(0, 0) rotate(180deg);
+        opacity: 1;
+    }
+}
+
+@keyframes scene2-text-in4 {
+    100% {
+        transform: translate(0, 0) rotate(270deg);
+        opacity: 1;
+    }
+}
+
+@keyframes scene2-trans {
+    100% {
+        transform: scale(0.4) rotate(30deg);
+    }
+}
+
+@keyframes scene2-trans2 {
+    0% {
+        transform: scale(0.4) rotate(30deg);
+    }
+
+    100% {
+        transform: scale(0.2) rotate(60deg);
+    }
+}
+
+@keyframes scene3-trans {
+    100% {
+        transform: scale(0.4) rotate(-30deg);
+    }
+}
+
+@keyframes scene4-text-in {
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes circle-move {
+    100% {
+        opacity: 0;
+        transform: scale(10);
+    }
+}
+
+@keyframes scene4-text1-in2 {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) rotate(-180deg);
+        opacity: 1;
+    }
+}
+
+@keyframes font-size-3vw {
+    100% {
+        font-size: 3vw;
+    }
+}
+
+@keyframes scene5-text4-in {
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scene5-slash-in {
+    100% {
+        transform: translateY(-10vw) translateX(40vw);
+    }
+}
+
+@keyframes scene5-slash-in2 {
+    100% {
+        transform: translateY(10vw) translateX(-40vw);
+    }
+}
+
+@keyframes scene5-out {
+    100% {
+        filter: blur(30px);
+        opacity: 0;
+    }
+}
+
+@keyframes scene6-slash1-in {
+    100% {
+        transform: translateX(0vw) translateY(-10vw);
+    }
+}
+
+@keyframes scene6-slash2-in {
+    100% {
+        transform: translateX(0vw) translateY(5vw);
+    }
+}
+
+@keyframes scene6-slash3-in {
+    100% {
+        transform: translateX(0vw) translateY(20vw);
+    }
+}
+
+@keyframes scene6-slash4-in {
+    100% {
+        transform: translateX(0vw) translateY(35vw);
+    }
+}
+
+@keyframes scene6-slash5-in {
+    100% {
+        transform: translateX(0vw) translateY(50vw);
+    }
+}
+
+@keyframes scene6-slash6-in {
+    100% {
+        transform: translateX(0vw) translateY(65vw);
+    }
+}
+
+@keyframes scene6-slash7-in {
+    100% {
+        transform: translateX(0vw) translateY(80vw);
+    }
+}
+
+@keyframes scene6-slash8-in {
+    100% {
+        transform: translateX(0vw) translateY(95vw);
+    }
+}
+
+@keyframes scene6-slash-move {
+    40% {
+        height: 16vw;
+        background-color: aqua;
+    }
+
+    60% {
+        height: 16vw;
+        background-color: aqua;
+    }
+
+    100% {
+        height: 1vw;
+    }
+}
+
+@keyframes scene7-slash1-in {
+    100% {
+        transform: translateX(-5vw);
+    }
+}
+
+@keyframes scene7-slash2-in {
+    100% {
+        transform: translateX(10vw);
+    }
+}
+
+@keyframes scene7-slash3-in {
+    100% {
+        transform: translateX(25vw);
+    }
+}
+
+@keyframes scene7-slash4-in {
+    100% {
+        transform: translateX(40vw);
+    }
+}
+
+@keyframes scene7-slash5-in {
+    100% {
+        transform: translateX(55vw);
+    }
+}
+
+@keyframes scene7-slash6-in {
+    100% {
+        transform: translateX(70vw);
+    }
+}
+
+@keyframes scene7-slash7-in {
+    100% {
+        transform: translateX(85vw);
+    }
+}
+
+@keyframes scene7-slash-move {
+    40% {
+        width: 16vw;
+        background-color: aqua;
+    }
+
+    60% {
+        width: 16vw;
+        background-color: aqua;
+    }
+
+    100% {
+        width: 1vw;
+    }
+}
+
+@keyframes scene8-slash1-in {
+    100% {
+        transform: translateX(-50vw) skewX(45deg);
+    }
+}
+
+@keyframes scene8-slash2-in {
+    100% {
+        transform: translateX(-20vw) skewX(45deg);
+    }
+}
+
+@keyframes scene8-slash3-in {
+    100% {
+        transform: translateX(10vw)skewX(45deg);
+    }
+}
+
+@keyframes scene8-slash4-in {
+    100% {
+        transform: translateX(40vw)skewX(45deg);
+    }
+}
+
+@keyframes scene8-slash5-in {
+    100% {
+        transform: translateX(70vw)skewX(45deg);
+    }
+}
+
+@keyframes scene8-slash6-in {
+    100% {
+        transform: translateX(100vw)skewX(45deg);
+    }
+}
+
+@keyframes scene8-slash7-in {
+    100% {
+        transform: translateX(130vw)skewX(45deg);
+    }
+}
+
+@keyframes scene8-slash-move {
+    40% {
+        width: 31vw;
+        background-color: aqua;
+    }
+
+    60% {
+        width: 31vw;
+        background-color: aqua;
+    }
+
+    100% {
+        width: 1vw;
+    }
+}
+
+@keyframes scene9-slash1-in {
+    100% {
+        transform: translateX(-50vw) skewX(-45deg);
+    }
+}
+
+@keyframes scene9-slash2-in {
+    100% {
+        transform: translateX(-20vw) skewX(-45deg);
+    }
+}
+
+@keyframes scene9-slash3-in {
+    100% {
+        transform: translateX(10vw)skewX(-45deg);
+    }
+}
+
+@keyframes scene9-slash4-in {
+    100% {
+        transform: translateX(40vw)skewX(-45deg);
+    }
+}
+
+@keyframes scene9-slash5-in {
+    100% {
+        transform: translateX(70vw)skewX(-45deg);
+    }
+}
+
+@keyframes scene9-slash6-in {
+    100% {
+        transform: translateX(100vw)skewX(-45deg);
+    }
+}
+
+@keyframes scene9-slash7-in {
+    100% {
+        transform: translateX(130vw)skewX(-45deg);
+    }
+}
+
+@keyframes scene9-slash-move {
+    40% {
+        width: 31vw;
+        background-color: aqua;
+    }
+
+    60% {
+        width: 31vw;
+        background-color: aqua;
+    }
+
+    100% {
+        width: 1vw;
+    }
+}
+
+@keyframes rin_white_in {
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes rin_white_opa {
+    83% {
+        opacity: 1;
+    }
+
+    84% {
+        opacity: 0;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ren_aqua_opa {
+    83% {
+        opacity: 0;
+    }
+
+    84% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes hex_scene11 {
+    100% {
+        transform: translate(-50%, -50%) scale(3) rotate(120deg);
+    }
+}
+
+@keyframes scene12-text1-in {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes scene12-text-move {
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
